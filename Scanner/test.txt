@@ -1,0 +1,24 @@
+int main ( )
+{
+	char * str ;
+	int i , j = 0 ;
+	int num ;
+	char * str_c ;
+	
+	gets ( str ) ;
+	
+	num = strlen ( str ) ;
+	
+	str_c = ( char * ) malloc ( num + 1 ) ;
+	
+	for ( i = num - 1 ; i > = 0 ; i - - ) {
+		str_c [ j ] = str [ i ] ;
+		j + + ;
+	}
+	str_c [ j ] = ' 0 ' ;
+	
+	printf ( " % s " , str_c ) ;
+	
+	free ( str_c ) ;
+	return 0 ;
+}
